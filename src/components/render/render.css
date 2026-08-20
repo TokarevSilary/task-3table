@@ -1,0 +1,13 @@
+.container {
+  display: flex;
+  align-items: center;
+  margin: 150px auto;
+  height: 100%;
+  gap: 10px;
+}
+
+.task-list {
+  width: 32%;
+  background-color: gray;
+}
+

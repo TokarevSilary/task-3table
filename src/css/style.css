@@ -1,0 +1,90 @@
+.container {
+  display: flex;
+  align-items: stretch;
+  gap: 10px;
+}
+
+body {
+  background-color: rgba(0, 100, 180, 0.9);
+}
+
+.task-list {
+  width: 33%;
+  background-color: rgba(180, 200, 200, 1);
+  /*height: 95vh;*/
+  border-radius: 5px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-add {
+  cursor: pointer;
+}
+
+.task-type {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card {
+  position: relative;
+  overflow-wrap: break-word;
+  background-color: white;
+  border-radius: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.phantom{
+  border: 3px solid green;
+  position: relative;
+  overflow-wrap: break-word;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.card-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.card-close.disappear {
+  display: none;
+}
+
+textarea {
+  width: 100%;
+  box-sizing: border-box;
+  resize: none;
+  border-radius: 5px;
+  border: none;
+  appearance: none;
+  outline: none;
+}
+
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.card:nth-child(n + 2) {
+  margin-top: 10px;
+}
+
+.card.dragging {
+  z-index: 1000;
+  cursor: grabbing;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100px;
+}
